@@ -69,7 +69,7 @@ with col1:
         st.success("¡Wuju! Ya mismo te escribo.")
         # REEMPLAZA EL NÚMERO ABAJO (sin el + solo el código de país y número)
         mi_numero = "50232347376"
-        link_wa = f"https://wa.me/{mi_numero}?text=¡Acepto%20la%20invitación%20al%20cine!%20🍿🎬"
+        link_wa = f"https://wa.me/{mi_numero}?text=¡Acepto%20la%20invitación%20🍿🎬"
         st.markdown(f"""
             <a href="{link_wa}" target="_blank" style="text-decoration:none;">
                 <div style="background-color:#25d366; color:white; padding:10px; border-radius:10px; text-align:center; font-weight:bold;">
