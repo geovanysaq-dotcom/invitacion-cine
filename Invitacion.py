@@ -53,11 +53,11 @@ st.markdown("<h1 class='titulo'>¡Hola! ✨</h1>", unsafe_allow_html=True)
 
 # Imagen de respaldo (esta es de un servidor muy estable de iconos/fotos)
 st.image("https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg",
-         caption="¿Hacemos algo diferente?",
+         caption="¿Qué vas ha hacer el jueves?",
          use_container_width=True)
 
 st.markdown(
-    "<p class='mensaje'>¿Vemos una pelicula el jueves en mi casa?. <br><br><b>¿Qué dices? 🍿🎬</b></p>",
+    "<p class='mensaje'>¿Vemos una pelicula en mi casa?. <br><br><b>¿Qué dices? 🍿🎬</b></p>",
     unsafe_allow_html=True)
 
 # 4. BOTONES DE RESPUESTA
@@ -66,7 +66,7 @@ col1, col2 = st.columns(2)
 with col1:
     if st.button("💖 ¡SÍ, ME ENCANTARÍA!"):
         st.balloons()
-        st.success("¡Wuju! Ya mismo te escribo.")
+        st.success("¡Wuju!")
         # REEMPLAZA EL NÚMERO ABAJO (sin el + solo el código de país y número)
         mi_numero = "50232347376"
         link_wa = f"https://wa.me/{mi_numero}?text=¡Acepto%20la%20invitación%20🍿🎬"
