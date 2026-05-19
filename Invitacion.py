@@ -53,11 +53,11 @@ st.markdown("<h1 class='titulo'>¡Hola! ✨</h1>", unsafe_allow_html=True)
 
 # Imagen de respaldo (esta es de un servidor muy estable de iconos/fotos)
 st.image("https://cdn.pixabay.com/photo/2017/11/24/10/43/ticket-2974645_1280.jpg",
-         caption="¿Qué vas ha hacer el jueves?",
+         caption="¿Qué vas ha hacer el sabado?",
          use_container_width=True)
 
 st.markdown(
-    "<p class='mensaje'>¿Vemos una pelicula en mi casa?. <br><br><b>¿Qué dices? 🍿🎬</b></p>",
+    "<p class='mensaje'>¿Vemos una pelicula, como amigos?. <br><br><b>¿Qué dices? 🍿🎬</b></p>",
     unsafe_allow_html=True)
 
 # 4. BOTONES DE RESPUESTA
@@ -80,4 +80,4 @@ with col1:
 
 with col2:
     if st.button("😊 DÉJAME PENSARLO"):
-        st.info("¿Segura? van a haber Crossants. ✨")
+        st.info("¿Segura? va ser bonito. ✨")
