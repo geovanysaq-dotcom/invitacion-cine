@@ -1,9 +1,9 @@
 import streamlit as st
 
-# 1. CONFIGURACIÓN DE PÁGINA (Estilo más íntimo)
+# 1. CONFIGURACIÓN DE PÁGINA 
 st.set_page_config(page_title="Para Ti... ❤️", page_icon="✨")
 
-# 2. ESTILO CSS PERSONALIZADO (Minimalista Oscuro y Romántico)
+# 2. ESTILO CSS PERSONALIZADO (Minimalista Oscuro, Elegante y Romántico)
 st.markdown("""
     <style>
     @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Cormorant+Garamond:ital,wght@1,400;1,600&display=swap');
@@ -15,11 +15,11 @@ st.markdown("""
 
     .titulo {
         font-family: 'Dancing Script', cursive;
-        color: #d4a373; /* Un dorado champagne elegante */
+        color: #d4a373; /* Dorado champagne */
         text-align: center;
-        font-size: 65px;
-        margin-top: 40px;
-        margin-bottom: 10px;
+        font-size: 60px;
+        margin-top: 20px;
+        margin-bottom: 5px;
     }
 
     .mensaje {
@@ -32,7 +32,7 @@ st.markdown("""
         line-height: 1.6;
     }
 
-    /* Modificación de los botones para que se vean súper finos */
+    /* Botones minimalistas finos */
     .stButton>button {
         border-radius: 50px;
         border: 1px solid #d4a373 !important;
@@ -61,15 +61,19 @@ st.markdown("""
 st.markdown("<h1 class='titulo'>Para Siempre...</h1>", unsafe_allow_html=True)
 
 # Divisor estético sutil
-st.markdown("<div style='text-align:center; color:#d4a373; opacity:0.4; margin-bottom:40px;'>✦ ─── ✦ ─── ✦</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align:center; color:#d4a373; opacity:0.4; margin-bottom:25px;'>✦ ─── ✦ ─── ✦</div>", unsafe_allow_html=True)
 
-# Tu frase matadora, limpia y directa en el centro de la pantalla
+# IMAGEN ROMÁNTICA INCORPORADA EN EL CÓDIGO
+# Es una foto nocturna/atardecer en un muelle con luces que combina con el diseño oscuro
+st.image("https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
+         use_container_width=True)
+
+# Frase limpia abajo de la imagen
 st.markdown(
     "<p class='mensaje'>Quédate conmigo... <br><br>y hagamos de cada pequeño momento, una eternidad completa. ❤️</p>",
     unsafe_allow_html=True)
 
-# Espaciado estético inferior antes de la pregunta
-st.markdown("<br><br>", unsafe_allow_html=True)
+st.markdown("<br>", unsafe_allow_html=True)
 
 # 4. BOTONES DE RESPUESTA
 col1, col2 = st.columns(2)
@@ -79,7 +83,6 @@ with col1:
         st.balloons()
         st.success("Hagamos historia... 🌹")
         
-        # Tu número de teléfono configurado
         mi_numero = "50232347376"
         link_wa = f"https://wa.me/{mi_numero}?text=Acepto...%20hagamos%20de%20cada%20momento%20una%20eternidad%20❤️"
         
