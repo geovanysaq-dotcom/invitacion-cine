@@ -1,7 +1,7 @@
 import streamlit as st
 
 # 1. CONFIGURACIÓN DE PÁGINA 
-st.set_page_config(page_title="Para Ti... ❤️", page_icon="✨")
+st.set_page_config(page_title="Flores Para Ti... ❤️", page_icon="🌻")
 
 # 2. ESTILO CSS PERSONALIZADO (Minimalista Oscuro, Elegante y Romántico)
 st.markdown("""
@@ -17,8 +17,8 @@ st.markdown("""
         font-family: 'Dancing Script', cursive;
         color: #d4a373; /* Dorado champagne */
         text-align: center;
-        font-size: 60px;
-        margin-top: 20px;
+        font-size: 55px;
+        margin-top: 10px;
         margin-bottom: 5px;
     }
 
@@ -27,7 +27,7 @@ st.markdown("""
         font-style: italic;
         text-align: center;
         color: #e5e5ea;
-        font-size: 26px;
+        font-size: 24px;
         padding: 10px 20px;
         line-height: 1.6;
     }
@@ -58,19 +58,19 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # 3. CONTENIDO PRINCIPAL
-st.markdown("<h1 class='titulo'>Para Siempre...</h1>", unsafe_allow_html=True)
+st.markdown("<h1 class='titulo'>Flores que no se marchitan...</h1>", unsafe_allow_html=True)
 
 # Divisor estético sutil
-st.markdown("<div style='text-align:center; color:#d4a373; opacity:0.4; margin-bottom:25px;'>✦ ─── ✦ ─── ✦</div>", unsafe_allow_html=True)
+st.markdown("<div style='text-align:center; color:#d4a373; opacity:0.4; margin-bottom:20px;'>✦ ─── 🌻 ─── ✦</div>", unsafe_allow_html=True)
 
-# IMAGEN ROMÁNTICA INCORPORADA EN EL CÓDIGO
-# Es una foto nocturna/atardecer en un muelle con luces que combina con el diseño oscuro
-st.image("https://images.unsplash.com/photo-1518199266791-5375a83190b7?q=80&w=1200&auto=format&fit=crop",
+# IMAGEN DE FLORES DE LEGO
+# Fotografía con tono estético y elegante de flores Lego
+st.image("https://images.unsplash.com/photo-1643122818988-cb941e73993f?q=80&w=1200&auto=format&fit=crop",
          use_container_width=True)
 
-# Frase limpia abajo de la imagen
+# Frase de regalo con el toque especial
 st.markdown(
-    "<p class='mensaje'>Quédate conmigo... <br><br>y hagamos de cada pequeño momento, una eternidad completa. ❤️</p>",
+    "<p class='mensaje'>No podía comprarte flores normales que se marchiten en unos días... <br>así que preferí construirtelas, pieza por pieza, para que te duren para siempre. 🌻✨</p>",
     unsafe_allow_html=True)
 
 st.markdown("<br>", unsafe_allow_html=True)
@@ -78,34 +78,34 @@ st.markdown("<br>", unsafe_allow_html=True)
 # 4. BOTONES DE RESPUESTA
 col1, col2 = st.columns(2)
 
+mi_numero = "50232347376"
+
 with col1:
-    if st.button("✨ Sí, me quedo"):
+    if st.button("🌻 Me encantaron"):
         st.balloons()
-        st.success("Hagamos historia... 🌹")
+        st.success("Tus flores eternas ya tienen dueña... 🌹")
         
-        mi_numero = "50232347376"
-        link_wa = f"https://wa.me/{mi_numero}?text=Acepto...%20hagamos%20de%20cada%20momento%20una%20eternidad%20❤️"
+        link_wa = f"https://wa.me/{mi_numero}?text=Me%20encantaron%20mis%20flores%20de%20Lego...%20gracias%20por%20construirlas%20para%20m%C3%AD%20❤️"
         
         st.markdown(f"""
             <a href="{link_wa}" target="_blank" style="text-decoration:none;">
                 <div style="background-color:transparent; color:#d4a373; border: 1px dashed #d4a373; padding:12px; border-radius:30px; text-align:center; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:18px; font-weight:bold; margin-top:15px;">
-                    Confirmar al WhatsApp 📱
+                    Decírmelo por WhatsApp 📱
                 </div>
             </a>
         """, unsafe_allow_html=True)
 
 with col2:
-    if st.button("🔒 Ya es un hecho"):
+    if st.button("✨ Las guardaré para siempre"):
         st.balloons()
-        st.info("No esperaba menos de nosotros. ✨")
+        st.info("Un detalle eterno para alguien inolvidable. ✨")
         
-        mi_numero = "50232347376"
-        link_wa = f"https://wa.me/{mi_numero}?text=Ya%20es%20un%20hecho,%20para%20siempre%20✨"
+        link_wa = f"https://wa.me/{mi_numero}?text=Prometo%20guardar%20mis%20flores%20para%20siempre%20✨"
         
         st.markdown(f"""
             <a href="{link_wa}" target="_blank" style="text-decoration:none;">
                 <div style="background-color:transparent; color:#d4a373; border: 1px dashed #d4a373; padding:12px; border-radius:30px; text-align:center; font-family:'Cormorant Garamond', serif; font-style:italic; font-size:18px; font-weight:bold; margin-top:15px;">
-                    Decírmelo ahora mismo 📱
+                    Confirmar entrega 📱
                 </div>
             </a>
         """, unsafe_allow_html=True)
